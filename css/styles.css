@@ -68,6 +68,7 @@ body{
     font-size: 44px;
     line-height:1.3;
     text-align: center;
+    text-transform: uppercase;
 }
 .about-title{
     color: var(--title-text-color);
