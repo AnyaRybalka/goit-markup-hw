@@ -174,7 +174,7 @@ body{
     background-color: var(--workersection);
     padding-bottom: 94px;
 }
-.workerbcolor{
+.do-list .item{
     background-color: var(--hero-title-color);
 }
 .workerbcolor .title{
