@@ -331,10 +331,14 @@ ul{
     font-weight: 700;
     font-size: 18px;
     line-height:2;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
+    margin: 15px;
 }
 .projects-list .discription{
     font-size: 16px;
     line-height:1.8;
+    margin: 15px;
 }
 img{
     display: block;
