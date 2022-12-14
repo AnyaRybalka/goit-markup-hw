@@ -28,6 +28,7 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    
 }
 .section {
     padding-top: 94px;
@@ -224,7 +225,7 @@ ul {
     margin-bottom: 30px;
     height: 120px;
     width: 270px;  
-    background-color: var(--third-bg-color);
+    background-color: var(--workersection);
     border-radius: 4px;
         
 }
@@ -275,7 +276,7 @@ ul {
     padding-top: 94px;
 }
 .workerbcolor{
-    padding: 30px 32px;
+    padding: 30px;
     background-color: var(--hero-title-color);
 }
 .workerbcolor .title{
@@ -300,11 +301,11 @@ ul {
     padding-left: 0; 
 }
 .worker .item-work{
-    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    /*border-radius: 0px 0px 4px 4px;
     border-bottom: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);*/
 }
 .worker .item-work + .item-work{
     margin-left: 30px;
@@ -313,6 +314,8 @@ ul {
 .icons-list{
     display: flex;
     align-items: center;
+    padding: 0;
+    gap: 10px;
 }
 .icons-list .item{
     width: 44px;
@@ -449,6 +452,9 @@ ul {
 .button:focus {
     background-color: var(--accent-color);
     color: var(--hero-title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);;
 }
 .projects-list {
     display: flex;
@@ -458,6 +464,14 @@ ul {
     padding-top: 0;
     padding-left: 0;
     margin-top: 50px;
+}
+.img-shadow{
+    display: block;
+    text-decoration: none;
+}
+.img-shadow:hover,
+.img-shadow:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-img {
@@ -503,6 +517,7 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
+    color: var(--primary-text-color);
 }
 
 /*footer i*/
@@ -545,6 +560,7 @@ img {
 .addresses-list{
     margin-top: 20px;
     text-decoration: none;
+    font-size: 14px;
 }
 .addresses-list>.item:not(:last-child) {
     margin-bottom: 9px;
@@ -560,10 +576,11 @@ img {
 
 .addresses-list .address {
     color: var(--hero-title-color);
+    font-size: 14px;
 }
 
 .addresses-list .contact {
-    color: var(--hero-title-color);
+    color: var(--primary-text-color);
 }
 
 .addresses-list .contact:hover,
@@ -590,7 +607,7 @@ img {
 .add {
     display: inline-block;
     margin-bottom: 20px;
-
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
