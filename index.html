@@ -55,7 +55,9 @@
       <section class="hero">
         <div class="herotb">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primary">Замовити послугу</button>
+          <button type="button" class="button primary" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section">
@@ -117,28 +119,37 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="do-list">
             <li class="item">
-              <img
-                src="./images/codework.jpg"
-                alt="Людина пише код"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  src="./images/codework.jpg"
+                  alt="Людина пише код"
+                  width="370"
+                  height="294"
+                />
+                <p class="lable">Десктопні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/designwork.jpg"
-                alt="Людина розробляє дизайн"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  src="./images/designwork.jpg"
+                  alt="Людина розробляє дизайн"
+                  width="370"
+                  height="294"
+                />
+                <p class="lable">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/colorwork.jpg"
-                alt="Людина працює з палітрою кольорів"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  src="./images/colorwork.jpg"
+                  alt="Людина працює з палітрою кольорів"
+                  width="370"
+                  height="294"
+                />
+                <p class="lable">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -530,5 +541,20 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="close-btn"
+          aria-lable="Закрити модальне вікно"
+          data-modal-close
+        >
+          <svg class="close-img" width="18" height="18">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
